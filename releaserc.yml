@@ -1,0 +1,12 @@
+version: 1
+content:
+  default_branch: main
+  default_repository: origin
+  tag_format: "${version}"
+  git_glob_patterns:
+    - "README.md"
+    - "CHANGELOG.md"
+    - ".claude-plugin/marketplace.json"
+    - ".claude-plugin/plugin.json"
+  scripts:
+    - './bumpversion.sh "${lastRelease.version}" "${nextRelease.version}" "${nextRelease.type}"'
