@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:redux-kit}",
+      "name": "Debug ExampleApp",
+      "target": "ExampleApp",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug ExampleApp"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:redux-kit}",
+      "name": "Release ExampleApp",
+      "target": "ExampleApp",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release ExampleApp"
+    }
+  ]
+}

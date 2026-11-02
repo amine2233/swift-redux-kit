@@ -1,0 +1,25 @@
+{
+  "name": "redux-kit-expert",
+  "version": "2.5.0",
+  "description": "Expert ReduxKit to create an application using the redux architecture convention.",
+  "author": {
+    "name": "Amine BENSALAH",
+    "email": "amine.bensalah@proton.me"
+  },
+  "repository": "https://gitlab.com/intech-consulting-app/swift-packages/redux-kit",
+  "license": "RESTRICTED",
+  "keywords": [
+    "swift",
+    "swiftui",
+    "ios",
+    "macos",
+    "apple",
+    "navigation",
+    "lists",
+    "sheets",
+    "redux"
+  ],
+  "skills": [
+    "./redux-kit-skill"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/marketplace/marketplace.schema.json",
+  "name": "redux-kit-skill",
+  "version": "2.5.0",
+  "owner": {
+    "name": "Amine BENSALAH",
+    "email": "amine.bensalah@intech-consulting.fr"
+  },
+  "metadata": {
+    "description": "Expert ReduxKit to create an application using the redux architecture convention."
+  },
+  "plugins": [
+    {
+      "name": "redux-kit-expert",
+      "description": "Expert ReduxKit to create an application using the redux architecture convention.",
+      "repository": "https://gitlab.com/intech-consulting-app/swift-packages/redux-kit",
+      "version": "2.5.0",
+      "author": {
+        "name": "Amine BENSALAH",
+        "email": "amine.bensalah@intech-consulting.fr"
+      },
+      "license": "RESTRICTED",
+      "category": "development",
+      "keywords": [
+        "swift",
+        "swiftui",
+        "ios",
+        "macos",
+        "apple",
+        "navigation",
+        "lists",
+        "sheets",
+        "redux"
+      ],
+      "tags": [
+        "swift",
+        "swiftui",
+        "ios",
+        "macos",
+        "apple",
+        "navigation",
+        "lists",
+        "sheets",
+        "redux"
+      ],
+      "source": "./"
+    }
+  ]
+}

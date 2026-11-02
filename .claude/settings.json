@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(swift test:*)",
+      "Bash(swift build:*)",
+      "Bash(swift mise_install)",
+      "Bash(swift mise_activate)",
+      "Bash(swift mint_bootstrap)",
+      "Bash(make format)",
+      "Bash(make check_documentation)",
+      "Edit",
+      "Create",
+      "Bash(git:*)",
+      "Bash(ls:*)"
+    ],
+    "deny": [],
+    "ask": ["Delete", "Bash(swift package)"]
+  }
+}

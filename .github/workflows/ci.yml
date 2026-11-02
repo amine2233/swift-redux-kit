@@ -1,0 +1,26 @@
+name: CI
+
+# Thin caller of the shared reusable workflow:
+#   amine2233/ci-shared/.github/workflows/ci.yml
+#
+# The test/lint logic lives in mise.toml; the shared workflow only provisions
+# runners and runs the mise tasks.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  ci:
+    uses: amine2233/ci-shared/.github/workflows/ci.yml@1.0
+    with:
+      # Tests run via `swift test` (mise's Swift toolchain), on macOS + Linux.
+      enable-macos: true
+      enable-linux: false
+      # ubuntu-latest is Ubuntu 26.04, which no longer ships libxml2.so.2 that mise's Swift toolchain needs
+      # (swift-test: error while loading shared libraries: libxml2.so.2). Remove once the toolchain supports it.
+      linux-runner: ubuntu-24.04
+      # Lint tasks are defined in mise.toml (check_code, check_documentation).
+      enable-lint: true
+      lint-task: "check_code ::: check_documentation"
