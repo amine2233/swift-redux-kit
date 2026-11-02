@@ -1,5 +1,5 @@
 [tools]
-swift = '6.3.1' # 6.4.0
+swift = 'system' # 6.4.0
 "github:executor-cli/executor" = "0.28.5"
 "github:executor-cli/gitlab-cli" = "2.0.1"
 
