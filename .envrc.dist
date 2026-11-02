@@ -1,2 +1,2 @@
-export GITLAB_API_TOKEN=
-export GITLAB_API_USER="amine2233"
+export GITHUB_API_TOKEN=
+export GITHUB_API_USER="amine2233"
